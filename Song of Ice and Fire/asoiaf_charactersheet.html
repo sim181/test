@@ -961,7 +961,7 @@
                         </tr>
                         <tr>
                             <td><input type='number' name='attr_will' value='2'/></td>
-                            <td><button type='roll' class='sheet-ability' name='attr_will-roll' style="width:210px;" value='/e rolls Will [[ ( [[ @{will} + @{wounds} ]] )d6 + @{injuries} ]]'>Will</button></td>
+                            <td><button type='roll' class='sheet-ability' name='attr_will-roll' style="width:210px;" value='/e rolls Will [[ ( [[ @{will} ]] )d6sdk[[@{will} + @{wounds} ]] + @{injuries} ]]'>Will</button></td>
                             <td>
                                 <div style="width:40px;">
                                     <input type="checkbox" name="attr_willSpecialty_Open" class="sheet-Specialty" value="1" checked/><span></span>
@@ -981,17 +981,17 @@
                                     <table>
                                         <tr>
                                             <td><input type='number' name='attr_willSpecialty1' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_willSpecialty1" value="/e rolls will:@{willSpecialtyname1} [[ ( [[ @{will} + @{willSpecialty1} + @{wounds} ]] )d6k@{will}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_willSpecialty1" value="/e rolls will:@{willSpecialtyname1} [[ [[ @{will} + @{willSpecialty1} ]]d6sdk[[@{will} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_willSpecialtyname1' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_willSpecialty2' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_willSpecialty2" value="/e rolls will:@{willSpecialtyname2} [[ ( [[ @{will} + @{willSpecialty2} + @{wounds} ]] )d6k@{will}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_willSpecialty2" value="/e rolls will:@{willSpecialtyname2} [[ [[ @{will} + @{willSpecialty2} ]]d6sdk[[@{will} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_willSpecialtyname2' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_willSpecialty3' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_willSpecialty3" value="/e rolls will:@{willSpecialtyname3} [[ ( [[ @{will} + @{willSpecialty3} + @{wounds} ]] )d6k@{will}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_willSpecialty3" value="/e rolls will:@{willSpecialtyname3} [[ [[ @{will} + @{willSpecialty3} ]]d6sdk[[@{will} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_willSpecialtyname3' value=''/></td>
                                         </tr>
                                     </table>
@@ -999,7 +999,7 @@
                                         <table>
                                             <tr>
                                                 <td><input type='number' name='attr_willSpecialty' value='0'/></td>
-                                                <td><button type='roll' class="sheet-" name="roll_willSpecialty" value="/e rolls will:@{willSpecialtyname} [[ ( [[ @{will} + @{willSpecialty} + @{wounds} ]] )d6k@{will}sd + @{injuries} ]]"></button></td>
+                                                <td><button type='roll' class="sheet-" name="roll_willSpecialty" value="/e rolls will:@{willSpecialtyname} [[ [[ @{will} + @{willSpecialty} ]]d6sdk[[@{will} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                                 <td><input type='text' name='attr_willSpecialtyname' value=''/></td>
                                             </tr>
                                         </table>
@@ -1125,7 +1125,7 @@
                             <th>Damage</th>
                         </tr>
                         <tr>
-                            <td><button type='roll' class='sheet-combat' name='attr_weapon-1' value='/e uses @{weapon1} [[ ( @{ability1} + @{testDice1} + @{wounds} )d6k@{ability1}sd + @{injuries} ]] to hit'>Roll</button></td>
+                            <td><button type='roll' class='sheet-combat' name='attr_weapon-1' value='/e uses @{weapon1} [[ [[ @{ability1} + @{testDice1} ]]d6sdk[[@{ability1} + @{wounds} ]] + @{injuries} ]] to hit'>Roll</button></td>
                             <td><input style='width:100px;' type='text' name='attr_weapon1' value=''/></td>
                             <td><input style='width:60px;' type='number' name='attr_testDice1' value='0'/></td> 
                             <td><input style='width:40px;' type='number' name='attr_damage1' value='0'/></td> 
@@ -1158,7 +1158,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><button type='roll' class='sheet-combat' name='attr_weapon-2' value='/e uses @{weapon2} [[ ( @{ability2} + @{testDice2} + @{wounds} )d6k@{ability2}sd + @{injuries} ]] to hit'>Roll</button></td>
+                            <td><button type='roll' class='sheet-combat' name='attr_weapon-2' value='/e uses @{weapon2} [[ [[ @{ability2} + @{testDice2} ]]d6sdk[[ @{ability2} + @{wounds} ]] + @{injuries} ]] to hit'>Roll</button></td>
                             <td><input style='width:100px;' type='text' name='attr_weapon2' value=''/></td>
                             <td><input style='width:60px;' type='number' name='attr_testDice2' value='0'/></td> 
                             <td><input style='width:40px;' type='number' name='attr_damage2' value='0'/></td> 
@@ -1191,9 +1191,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><button type='roll' class='sheet-combat' name='attr_weapon-3' value='/e uses @{weapon3} [[ ( @{ability3} + @{testDice3} + @{wounds} )d6k@{ability3}sd + @{injuries} ]] to hit'>Roll</button></td>
+                            <td><button type='roll' class='sheet-combat' name='attr_weapon-3' value='/e uses @{weapon3} [[ [[ @{ability3} + @{testDice3} ]]d6sdk[[@{ability3} + @[wounds}]] + @{injuries} ]] to hit'>Roll</button></td>
                             <td><input style='width:100px;' type='text' name='attr_weapon3' value=''/></td>
-                            <td><input style='width:60px;' type='number' name='attr_testDice3' value='0'/></td> 
+                            <td><input style='width:60px;' type='number' name='attr_testDice3' value='0'/></td>
                             <td><input style='width:40px;' type='number' name='attr_damage3' value='0'/></td> 
                         </tr>
                         <tr>
@@ -1224,9 +1224,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><button type='roll' class='sheet-combat' name='attr_weapon-4' value='/e uses @{weapon4} [[ ( @{ability4} + @{testDice4} + @{wounds} )d6k@{ability4}sd + @{injuries} ]] to hit'>Roll</button></td>
+                            <td><button type='roll' class='sheet-combat' name='attr_weapon-4' value='/e uses @{weapon4} [[ [[ @{ability4} + @{testDice4} ]]d6sdk[[@{ability4} + @{wounds}]] + @{injuries} ]] to hit'>Roll</button></td>
                             <td><input style='width:100px;' type='text' name='attr_weapon4' value=''/></td>
-                            <td><input style='width:60px;' type='number' name='attr_testDice4' value='0'/></td> 
+                            <td><input style='width:60px;' type='number' name='attr_testDice4' value='0'/></td>
                             <td><input style='width:40px;' type='number' name='attr_damage4' value='0'/></td> 
                         </tr>
                         <tr>
@@ -1294,4 +1294,3 @@
             </div>
         </div>
     </div>
-</div>
