@@ -97,7 +97,7 @@
                     <tbody>
                         <tr>
                             <td><input type='number' name='attr_agility' value='2'/></td>
-                            <td><button type='roll' class='sheet-ability' name='attr_agility-roll' style="width:210px;" value='/e rolls Agility [[ ( [[ @{agility} + @{wounds} ]] )d6 + @{injuries} ]]'>Agility</button></td>
+                            <td><button type='roll' class='sheet-ability' name='attr_agility-roll' style="width:210px;" value='/e rolls Agility [[ [[ @{agility}d6sdk[[@{agility} + @{wounds} ]] + @{injuries} ]]'>Agility</button></td>
                             <td>
                                 <div style="width:40px;">
                                     <input type="checkbox" name="attr_agilitySpecialty_Open" class="sheet-Specialty" value="1" checked/><span></span>
@@ -117,17 +117,17 @@
                                     <table>
                                         <tr>
                                             <td><input type='number' name='attr_agilitySpecialty1' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_agilitySpecialty1" value="/e rolls Agility:@{agilitySpecialtyname1} [[ ( [[ @{agility} + @{agilitySpecialty1} + @{wounds} ]] )d6k@{agility}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_agilitySpecialty1" value="/e rolls Agility:@{agilitySpecialtyname1} [[ [[ @{agility} + @{agilitySpecialty} ]]d6sdk[[@{agility} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_agilitySpecialtyname1' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_agilitySpecialty2' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_agilitySpecialty2" value="/e rolls Agility:@{agilitySpecialtyname2} [[ ( [[ @{agility} + @{agilitySpecialty2} + @{wounds} ]] )d6k@{agility}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_agilitySpecialty2" value="/e rolls Agility:@{agilitySpecialtyname2} [[ [[ @{agility} + @{agilitySpecialty} ]]d6sdk[[@{agility} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_agilitySpecialtyname2' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_agilitySpecialty3' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_agilitySpecialty3" value="/e rolls Agility:@{agilitySpecialtyname3} [[ ( [[ @{agility} + @{agilitySpecialty3} + @{wounds} ]] )d6k@{agility}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_agilitySpecialty3" value="/e rolls Agility:@{agilitySpecialtyname3} [[ [[ @{agility} + @{agilitySpecialty} ]]d6sdk[[@{agility} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_agilitySpecialtyname3' value=''/></td>
                                         </tr>
                                     </table>
@@ -135,7 +135,7 @@
                                         <table>
                                             <tr>
                                                 <td><input type='number' name='attr_agilitySpecialty' value='0'/></td>
-                                                <td><button type='roll' class="sheet-" name="roll_agilitySpecialty" value="/e rolls Agility:@{agilitySpecialtyname} [[ ( [[ @{agility} + @{agilitySpecialty} + @{wounds} ]] )d6k@{agility}sd + @{injuries} ]]"></button></td>
+                                                <td><button type='roll' class="sheet-" name="roll_agilitySpecialty" value="/e rolls Agility:@{agilitySpecialtyname} [[ [[ @{agility} + @{agilitySpecialty} ]]d6sdk[[@{agility}sd + @{wounds} ]] + @{injuries} ]]"></button></td>
                                                 <td><input type='text' name='attr_agilitySpecialtyname' value=''/></td>
                                             </tr>
                                         </table>
@@ -145,7 +145,7 @@
                         </tr>
                         <tr>
                             <td><input type='number' name='attr_animalHandling' value='2'/></td>
-                            <td><button type='roll' class='sheet-ability' name='attr_animalHandling-roll' style="width:210px;" value='/e rolls Animal Handling [[ ( [[ @{animalHandling} + @{wounds} ]] )d6 + @{injuries} ]]'>Animal Handling</button></td>
+                            <td><button type='roll' class='sheet-ability' name='attr_animalHandling-roll' style="width:210px;" value='/e rolls Animal Handling [[ @{animalHandling}d6sdk[[@{animalHandling} + @{wounds} ]] + @{injuries} ]]'>Animal Handling</button></td>
                             <td>
                                 <div style="width:40px;">
                                     <input type="checkbox" name="attr_animalHandlingSpecialty_Open" class="sheet-Specialty" value="1" checked/><span></span>
@@ -165,17 +165,17 @@
                                     <table>
                                         <tr>
                                             <td><input type='number' name='attr_animalHandlingSpecialty1' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_animalHandlingSpecialty1" value="/e rolls animalHandling:@{animalHandlingSpecialtyname1} [[ ( [[ @{animalHandling} + @{animalHandlingSpecialty1} + @{wounds} ]] )d6k@{animalHandling}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_animalHandlingSpecialty1" value="/e rolls animalHandling:@{animalHandlingSpecialtyname1} [[ [[ @{animalHandling} + @{animalHandlingSpecialty1} ]]d6sdk[[@{animalHandling} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_animalHandlingSpecialtyname1' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_animalHandlingSpecialty2' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_animalHandlingSpecialty2" value="/e rolls animalHandling:@{animalHandlingSpecialtyname2} [[ ( [[ @{animalHandling} + @{animalHandlingSpecialty2} + @{wounds} ]] )d6k@{animalHandling}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_animalHandlingSpecialty2" value="/e rolls animalHandling:@{animalHandlingSpecialtyname2} [[ [[ @{animalHandling} + @{animalHandlingSpecialty2} ]]d6sdk[[@{animalHandling} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_animalHandlingSpecialtyname2' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_animalHandlingSpecialty3' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_animalHandlingSpecialty3" value="/e rolls animalHandling:@{animalHandlingSpecialtyname3} [[ ( [[ @{animalHandling} + @{animalHandlingSpecialty3} + @{wounds} ]] )d6k@{animalHandling}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_animalHandlingSpecialty3" value="/e rolls animalHandling:@{animalHandlingSpecialtyname3} [[ [[ @{animalHandling} + @{animalHandlingSpecialty3} ]]d6sdk[[@{animalHandling} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_animalHandlingSpecialtyname3' value=''/></td>
                                         </tr>
                                     </table>
@@ -183,7 +183,7 @@
                                         <table>
                                             <tr>
                                                 <td><input type='number' name='attr_animalHandlingSpecialty' value='0'/></td>
-                                                <td><button type='roll' class="sheet-" name="roll_animalHandlingSpecialty" value="/e rolls animalHandling:@{animalHandlingSpecialtyname} [[ ( [[ @{animalHandling} + @{animalHandlingSpecialty} + @{wounds} ]] )d6k@{animalHandling}sd + @{injuries} ]]"></button></td>
+                                                <td><button type='roll' class="sheet-" name="roll_animalHandlingSpecialty" value="/e rolls animalHandling:@{animalHandlingSpecialtyname} [[ [[ @{animalHandling} + @{animalHandlingSpecialty} ]]d6sdk[[@{animalHandling} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                                 <td><input type='text' name='attr_animalHandlingSpecialtyname' value=''/></td>
                                             </tr>
                                         </table>
