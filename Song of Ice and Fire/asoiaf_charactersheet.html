@@ -577,7 +577,7 @@
                         </tr>
                         <tr>
                             <td><input type='number' name='attr_knowledge' value='2'/></td>
-                            <td><button type='roll' class='sheet-ability' name='attr_knowledge-roll' style="width:210px;" value='/e rolls Knowledge [[ ( [[ @{knowledge} + @{wounds} ]] )d6 + @{injuries} ]]'>Knowledge</button></td>
+                            <td><button type='roll' class='sheet-ability' name='attr_knowledge-roll' style="width:210px;" value='/e rolls Knowledge [[ @{knowledge}d6sdk[[@{knowledge} + @{wounds} ]] + @{injuries} ]]'>Knowledge</button></td>
                             <td>
                                 <div style="width:40px;">
                                     <input type="checkbox" name="attr_knowledgeSpecialty_Open" class="sheet-Specialty" value="1" checked/><span></span>
@@ -597,17 +597,17 @@
                                     <table>
                                         <tr>
                                             <td><input type='number' name='attr_knowledgeSpecialty1' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_knowledgeSpecialty1" value="/e rolls knowledge:@{knowledgeSpecialtyname1} [[ ( [[ @{knowledge} + @{knowledgeSpecialty1} + @{wounds} ]] )d6k@{knowledge}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_knowledgeSpecialty1" value="/e rolls knowledge:@{knowledgeSpecialtyname1} [[ [[ @{knowledge} + @{knowledgeSpecialty1} ]]d6sdk[[@{knowledge} + @{wounds}]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_knowledgeSpecialtyname1' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_knowledgeSpecialty2' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_knowledgeSpecialty2" value="/e rolls knowledge:@{knowledgeSpecialtyname2} [[ ( [[ @{knowledge} + @{knowledgeSpecialty2} + @{wounds} ]] )d6k@{knowledge}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_knowledgeSpecialty2" value="/e rolls knowledge:@{knowledgeSpecialtyname2} [[ [[ @{knowledge} + @{knowledgeSpecialty2} ]]d6sdk[[@{knowledge} + @{wounds}]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_knowledgeSpecialtyname2' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_knowledgeSpecialty3' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_knowledgeSpecialty3" value="/e rolls knowledge:@{knowledgeSpecialtyname3} [[ ( [[ @{knowledge} + @{knowledgeSpecialty3} + @{wounds} ]] )d6k@{knowledge}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_knowledgeSpecialty3" value="/e rolls knowledge:@{knowledgeSpecialtyname3} [[ [[ @{knowledge} + @{knowledgeSpecialty3} ]]d6sdk[[@{knowledge} + @{wounds}]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_knowledgeSpecialtyname3' value=''/></td>
                                         </tr>
                                     </table>
@@ -615,7 +615,7 @@
                                         <table>
                                             <tr>
                                                 <td><input type='number' name='attr_knowledgeSpecialty' value='0'/></td>
-                                                <td><button type='roll' class="sheet-" name="roll_knowledgeSpecialty" value="/e rolls knowledge:@{knowledgeSpecialtyname} [[ ( [[ @{knowledge} + @{knowledgeSpecialty} + @{wounds} ]] )d6k@{knowledge}sd + @{injuries} ]]"></button></td>
+                                                <td><button type='roll' class="sheet-" name="roll_knowledgeSpecialty" value="/e rolls knowledge:@{knowledgeSpecialtyname} [[ [[ @{knowledge} + @{knowledgeSpecialty} ]]d6sdk[[@{knowledge} + @{wounds}]] + @{injuries} ]]"></button></td>
                                                 <td><input type='text' name='attr_knowledgeSpecialtyname' value=''/></td>
                                             </tr>
                                         </table>
@@ -625,7 +625,7 @@
                         </tr>
                         <tr>
                             <td><input type='number' name='attr_marksmanship' value='2'/></td>
-                            <td><button type='roll' class='sheet-ability' name='attr_marksmanship-roll' style="width:210px;" value='/e rolls Marksmanship [[ ( [[ @{marksmanship} + @{wounds} ]] )d6 + @{injuries} ]]'>Marksmanship</button></td>
+                            <td><button type='roll' class='sheet-ability' name='attr_marksmanship-roll' style="width:210px;" value='/e rolls Marksmanship [[ @{marksmanship}d6sdk[[@{marksmanship} + @{wounds} ]] + @{injuries} ]]'>Marksmanship</button></td>
                             <td>
                                 <div style="width:40px;">
                                     <input type="checkbox" name="attr_marksmanshipSpecialty_Open" class="sheet-Specialty" value="1" checked/><span></span>
@@ -645,17 +645,17 @@
                                     <table>
                                         <tr>
                                             <td><input type='number' name='attr_marksmanshipSpecialty1' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_marksmanshipSpecialty1" value="/e rolls marksmanship:@{marksmanshipSpecialtyname1} [[ ( [[ @{marksmanship} + @{marksmanshipSpecialty1} + @{wounds} ]] )d6k@{marksmanship}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_marksmanshipSpecialty1" value="/e rolls marksmanship:@{marksmanshipSpecialtyname1} [[ [[ @{marksmanship} + @{marksmanshipSpecialty1} ]]d6sdk[[@{marksmanship} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_marksmanshipSpecialtyname1' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_marksmanshipSpecialty2' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_marksmanshipSpecialty2" value="/e rolls marksmanship:@{marksmanshipSpecialtyname2} [[ ( [[ @{marksmanship} + @{marksmanshipSpecialty2} + @{wounds} ]] )d6k@{marksmanship}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_marksmanshipSpecialty2" value="/e rolls marksmanship:@{marksmanshipSpecialtyname2} [[ [[ @{marksmanship} + @{marksmanshipSpecialty2} ]]d6sdk[[@{marksmanship} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_marksmanshipSpecialtyname2' value=''/></td>
                                         </tr>
                                         <tr>
                                             <td><input type='number' name='attr_marksmanshipSpecialty3' value='0'/></td>
-                                            <td><button type='roll' class="sheet-" name="roll_marksmanshipSpecialty3" value="/e rolls marksmanship:@{marksmanshipSpecialtyname3} [[ ( [[ @{marksmanship} + @{marksmanshipSpecialty3} + @{wounds} ]] )d6k@{marksmanship}sd + @{injuries} ]]"></button></td>
+                                            <td><button type='roll' class="sheet-" name="roll_marksmanshipSpecialty3" value="/e rolls marksmanship:@{marksmanshipSpecialtyname3} [[ [[ @{marksmanship} + @{marksmanshipSpecialty3} ]]d6sdk[[@{marksmanship} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                             <td><input type='text' name='attr_marksmanshipSpecialtyname3' value=''/></td>
                                         </tr>
                                     </table>
@@ -663,7 +663,7 @@
                                         <table>
                                             <tr>
                                                 <td><input type='number' name='attr_marksmanshipSpecialty' value='0'/></td>
-                                                <td><button type='roll' class="sheet-" name="roll_marksmanshipSpecialty" value="/e rolls marksmanship:@{marksmanshipSpecialtyname} [[ ( [[ @{marksmanship} + @{marksmanshipSpecialty} + @{wounds} ]] )d6k@{marksmanship}sd + @{injuries} ]]"></button></td>
+                                                <td><button type='roll' class="sheet-" name="roll_marksmanshipSpecialty" value="/e rolls marksmanship:@{marksmanshipSpecialtyname} [[ [[ @{marksmanship} + @{marksmanshipSpecialty} ]]d6sdk[[@{marksmanship} + @{wounds} ]] + @{injuries} ]]"></button></td>
                                                 <td><input type='text' name='attr_marksmanshipSpecialtyname' value=''/></td>
                                             </tr>
                                         </table>
